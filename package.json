@@ -1,0 +1,17 @@
+{
+    "buildNpmdoc":"bittorrent-dht",
+    "devDependencies": {
+        "bittorrent-dht": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "name":"npmdoc-bittorrent-dht",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-bittorrent-dht"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh"
+    },
+    "version": "0.0.1"
+}
