@@ -1,0 +1,264 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/feross/bittorrent-dht#readme">bittorrent-dht (v7.5.0)</a>
+</h1>
+<h4>Simple, robust, BitTorrent DHT implementation</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bittorrent-dht">module bittorrent-dht</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client">
+            function <span class="apidocSignatureSpan">bittorrent-dht.</span>Client
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Server">
+            function <span class="apidocSignatureSpan">bittorrent-dht.</span>Server
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.super_">
+            function <span class="apidocSignatureSpan">bittorrent-dht.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bittorrent-dht" id="apidoc.module.bittorrent-dht">module bittorrent-dht</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client" id="apidoc.element.bittorrent-dht.Client">
+        function <span class="apidocSignatureSpan">bittorrent-dht.</span>Client
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DHT(opts) {
+  if (!(this instanceof DHT)) return new DHT(opts)
+  if (!opts) opts = {}
+
+  var self = this
+
+  this._tables = LRU({maxAge: ROTATE_INTERVAL, max: opts.maxTables || 1000})
+  this._values = LRU(opts.maxValues || 1000)
+  this._peers = new PeerStore(opts.maxPeers || 10000)
+
+  this._secrets = null
+  this._rpc = krpc(opts)
+  this._rpc.on('query', onquery)
+  this._rpc.on('node', onnode)
+  this._rpc.on('warning', onwarning)
+  this._rpc.on('error', onerror)
+  this._rpc.on('listening', onlistening)
+  this._rotateSecrets()
+  this._verify = opts.verify || null
+  this._host = opts.host || null
+  this._interval = setInterval(rotateSecrets, ROTATE_INTERVAL)
+  this._hash = opts.hash || sha1
+
+  this.listening = false
+  this.destroyed = false
+  this.nodeId = this._rpc.id
+  this.nodes = this._rpc.nodes
+
+  process.nextTick(bootstrap)
+
+  EventEmitter.call(this)
+  this._debug('new DHT %s', this.nodeId)
+
+  function onlistening () {
+    self.listening = true
+    self._debug('listening %d', self.address().port)
+    self.emit('listening')
+  }
+
+  function onquery (query, peer) {
+    self._onquery(query, peer)
+  }
+
+  function rotateSecrets () {
+    self._rotateSecrets()
+  }
+
+  function bootstrap () {
+    if (!self.destroyed) self._bootstrap(opts.bootstrap !== false)
+  }
+
+  function onwarning (err) {
+    self.emit('warning', err)
+  }
+
+  function onerror (err) {
+    self.emit('error', err)
+  }
+
+  function onnode (node) {
+    self.emit('node', node)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Server" id="apidoc.element.bittorrent-dht.Server">
+        function <span class="apidocSignatureSpan">bittorrent-dht.</span>Server
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DHT(opts) {
+  if (!(this instanceof DHT)) return new DHT(opts)
+  if (!opts) opts = {}
+
+  var self = this
+
+  this._tables = LRU({maxAge: ROTATE_INTERVAL, max: opts.maxTables || 1000})
+  this._values = LRU(opts.maxValues || 1000)
+  this._peers = new PeerStore(opts.maxPeers || 10000)
+
+  this._secrets = null
+  this._rpc = krpc(opts)
+  this._rpc.on('query', onquery)
+  this._rpc.on('node', onnode)
+  this._rpc.on('warning', onwarning)
+  this._rpc.on('error', onerror)
+  this._rpc.on('listening', onlistening)
+  this._rotateSecrets()
+  this._verify = opts.verify || null
+  this._host = opts.host || null
+  this._interval = setInterval(rotateSecrets, ROTATE_INTERVAL)
+  this._hash = opts.hash || sha1
+
+  this.listening = false
+  this.destroyed = false
+  this.nodeId = this._rpc.id
+  this.nodes = this._rpc.nodes
+
+  process.nextTick(bootstrap)
+
+  EventEmitter.call(this)
+  this._debug('new DHT %s', this.nodeId)
+
+  function onlistening () {
+    self.listening = true
+    self._debug('listening %d', self.address().port)
+    self.emit('listening')
+  }
+
+  function onquery (query, peer) {
+    self._onquery(query, peer)
+  }
+
+  function rotateSecrets () {
+    self._rotateSecrets()
+  }
+
+  function bootstrap () {
+    if (!self.destroyed) self._bootstrap(opts.bootstrap !== false)
+  }
+
+  function onwarning (err) {
+    self.emit('warning', err)
+  }
+
+  function onerror (err) {
+    self.emit('error', err)
+  }
+
+  function onnode (node) {
+    self.emit('node', node)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.super_" id="apidoc.element.bittorrent-dht.super_">
+        function <span class="apidocSignatureSpan">bittorrent-dht.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
