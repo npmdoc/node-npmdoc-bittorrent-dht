@@ -49,9 +49,9 @@
 <h1>api documentation for
     <a
 
-        href="https://github.com/feross/bittorrent-dht#readme"
+        href="https://github.com/webtorrent/bittorrent-dht#readme"
 
-    >bittorrent-dht (v7.5.0)</a>
+    >bittorrent-dht (v7.5.3)</a>
 </h1>
 <h4>Simple, robust, BitTorrent DHT implementation</h4>
 <div class="apidocSectionDiv"><a
@@ -60,6 +60,15 @@
 ><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.bittorrent-dht">module bittorrent-dht</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.bittorrent-dht">
+            function <span class="apidocSignatureSpan"></span>bittorrent-dht
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
 
         <li>
 
@@ -88,12 +97,371 @@
 
         </li>
 
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bittorrent-dht.</span>Client.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bittorrent-dht.Client">module bittorrent-dht.Client</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.Client">
+            function <span class="apidocSignatureSpan">bittorrent-dht.</span>Client
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.Server">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.</span>Server
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.super_">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bittorrent-dht.Client.prototype">module bittorrent-dht.Client.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._addPeer">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_addPeer
+            <span class="apidocSignatureSpan">(peer, infoHash, from)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._bootstrap">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_bootstrap
+            <span class="apidocSignatureSpan">(populate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._closest">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_closest
+            <span class="apidocSignatureSpan">(target, message, onmessage, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._debug">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_debug
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._generateToken">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_generateToken
+            <span class="apidocSignatureSpan">(host, secret)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._onannouncepeer">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onannouncepeer
+            <span class="apidocSignatureSpan">(query, peer)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._onfindnode">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onfindnode
+            <span class="apidocSignatureSpan">(query, peer)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._onget">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onget
+            <span class="apidocSignatureSpan">(query, peer)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._ongetpeers">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_ongetpeers
+            <span class="apidocSignatureSpan">(query, peer)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._onput">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onput
+            <span class="apidocSignatureSpan">(query, peer)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._onquery">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onquery
+            <span class="apidocSignatureSpan">(query, peer)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._preannounce">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_preannounce
+            <span class="apidocSignatureSpan">(infoHash, port, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._preput">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_preput
+            <span class="apidocSignatureSpan">(key, opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._put">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_put
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._rotateSecrets">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_rotateSecrets
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._sendPing">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_sendPing
+            <span class="apidocSignatureSpan">(node, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype._validateToken">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_validateToken
+            <span class="apidocSignatureSpan">(host, token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.addNode">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>addNode
+            <span class="apidocSignatureSpan">(node)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.address">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>address
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.announce">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>announce
+            <span class="apidocSignatureSpan">(infoHash, port, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.destroy">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>destroy
+            <span class="apidocSignatureSpan">(cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.get">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>get
+            <span class="apidocSignatureSpan">(key, opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.listen">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>listen
+            <span class="apidocSignatureSpan">(port, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.lookup">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>lookup
+            <span class="apidocSignatureSpan">(infoHash, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.put">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>put
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.removeNode">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>removeNode
+            <span class="apidocSignatureSpan">(id)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bittorrent-dht.Client.prototype.toJSON">
+            function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>toJSON
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.bittorrent-dht" id="apidoc.module.bittorrent-dht">module bittorrent-dht</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.bittorrent-dht" id="apidoc.element.bittorrent-dht.bittorrent-dht">
+        function <span class="apidocSignatureSpan"></span>bittorrent-dht
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DHT(opts) {
+  if (!(this instanceof DHT)) return new DHT(opts)
+  if (!opts) opts = {}
+
+  var self = this
+
+  this._tables = LRU({maxAge: ROTATE_INTERVAL, max: opts.maxTables || 1000})
+  this._values = LRU(opts.maxValues || 1000)
+  this._peers = new PeerStore(opts.maxPeers || 10000)
+
+  this._secrets = null
+  this._rpc = krpc(opts)
+  this._rpc.on(&#x27;query&#x27;, onquery)
+  this._rpc.on(&#x27;node&#x27;, onnode)
+  this._rpc.on(&#x27;warning&#x27;, onwarning)
+  this._rpc.on(&#x27;error&#x27;, onerror)
+  this._rpc.on(&#x27;listening&#x27;, onlistening)
+  this._rotateSecrets()
+  this._verify = opts.verify || null
+  this._host = opts.host || null
+  this._interval = setInterval(rotateSecrets, ROTATE_INTERVAL)
+  this._hash = opts.hash || sha1
+
+  this.listening = false
+  this.destroyed = false
+  this.nodeId = this._rpc.id
+  this.nodes = this._rpc.nodes
+
+  process.nextTick(bootstrap)
+
+  EventEmitter.call(this)
+  this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+
+  function onlistening () {
+    self.listening = true
+    self._debug(&#x27;listening %d&#x27;, self.address().port)
+    self.emit(&#x27;listening&#x27;)
+  }
+
+  function onquery (query, peer) {
+    self._onquery(query, peer)
+  }
+
+  function rotateSecrets () {
+    self._rotateSecrets()
+  }
+
+  function bootstrap () {
+    if (!self.destroyed) self._bootstrap(opts.bootstrap !== false)
+  }
+
+  function onwarning (err) {
+    self.emit(&#x27;warning&#x27;, err)
+  }
+
+  function onerror (err) {
+    self.emit(&#x27;error&#x27;, err)
+  }
+
+  function onnode (node) {
+    self.emit(&#x27;node&#x27;, node)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
@@ -257,6 +625,1409 @@
   EventEmitter.init.call(this);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bittorrent-dht.Client" id="apidoc.module.bittorrent-dht.Client">module bittorrent-dht.Client</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.Client" id="apidoc.element.bittorrent-dht.Client.Client">
+        function <span class="apidocSignatureSpan">bittorrent-dht.</span>Client
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DHT(opts) {
+  if (!(this instanceof DHT)) return new DHT(opts)
+  if (!opts) opts = {}
+
+  var self = this
+
+  this._tables = LRU({maxAge: ROTATE_INTERVAL, max: opts.maxTables || 1000})
+  this._values = LRU(opts.maxValues || 1000)
+  this._peers = new PeerStore(opts.maxPeers || 10000)
+
+  this._secrets = null
+  this._rpc = krpc(opts)
+  this._rpc.on(&#x27;query&#x27;, onquery)
+  this._rpc.on(&#x27;node&#x27;, onnode)
+  this._rpc.on(&#x27;warning&#x27;, onwarning)
+  this._rpc.on(&#x27;error&#x27;, onerror)
+  this._rpc.on(&#x27;listening&#x27;, onlistening)
+  this._rotateSecrets()
+  this._verify = opts.verify || null
+  this._host = opts.host || null
+  this._interval = setInterval(rotateSecrets, ROTATE_INTERVAL)
+  this._hash = opts.hash || sha1
+
+  this.listening = false
+  this.destroyed = false
+  this.nodeId = this._rpc.id
+  this.nodes = this._rpc.nodes
+
+  process.nextTick(bootstrap)
+
+  EventEmitter.call(this)
+  this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+
+  function onlistening () {
+    self.listening = true
+    self._debug(&#x27;listening %d&#x27;, self.address().port)
+    self.emit(&#x27;listening&#x27;)
+  }
+
+  function onquery (query, peer) {
+    self._onquery(query, peer)
+  }
+
+  function rotateSecrets () {
+    self._rotateSecrets()
+  }
+
+  function bootstrap () {
+    if (!self.destroyed) self._bootstrap(opts.bootstrap !== false)
+  }
+
+  function onwarning (err) {
+    self.emit(&#x27;warning&#x27;, err)
+  }
+
+  function onerror (err) {
+    self.emit(&#x27;error&#x27;, err)
+  }
+
+  function onnode (node) {
+    self.emit(&#x27;node&#x27;, node)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.Server" id="apidoc.element.bittorrent-dht.Client.Server">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.</span>Server
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function DHT(opts) {
+  if (!(this instanceof DHT)) return new DHT(opts)
+  if (!opts) opts = {}
+
+  var self = this
+
+  this._tables = LRU({maxAge: ROTATE_INTERVAL, max: opts.maxTables || 1000})
+  this._values = LRU(opts.maxValues || 1000)
+  this._peers = new PeerStore(opts.maxPeers || 10000)
+
+  this._secrets = null
+  this._rpc = krpc(opts)
+  this._rpc.on(&#x27;query&#x27;, onquery)
+  this._rpc.on(&#x27;node&#x27;, onnode)
+  this._rpc.on(&#x27;warning&#x27;, onwarning)
+  this._rpc.on(&#x27;error&#x27;, onerror)
+  this._rpc.on(&#x27;listening&#x27;, onlistening)
+  this._rotateSecrets()
+  this._verify = opts.verify || null
+  this._host = opts.host || null
+  this._interval = setInterval(rotateSecrets, ROTATE_INTERVAL)
+  this._hash = opts.hash || sha1
+
+  this.listening = false
+  this.destroyed = false
+  this.nodeId = this._rpc.id
+  this.nodes = this._rpc.nodes
+
+  process.nextTick(bootstrap)
+
+  EventEmitter.call(this)
+  this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+
+  function onlistening () {
+    self.listening = true
+    self._debug(&#x27;listening %d&#x27;, self.address().port)
+    self.emit(&#x27;listening&#x27;)
+  }
+
+  function onquery (query, peer) {
+    self._onquery(query, peer)
+  }
+
+  function rotateSecrets () {
+    self._rotateSecrets()
+  }
+
+  function bootstrap () {
+    if (!self.destroyed) self._bootstrap(opts.bootstrap !== false)
+  }
+
+  function onwarning (err) {
+    self.emit(&#x27;warning&#x27;, err)
+  }
+
+  function onerror (err) {
+    self.emit(&#x27;error&#x27;, err)
+  }
+
+  function onnode (node) {
+    self.emit(&#x27;node&#x27;, node)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.super_" id="apidoc.element.bittorrent-dht.Client.super_">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bittorrent-dht.Client.prototype" id="apidoc.module.bittorrent-dht.Client.prototype">module bittorrent-dht.Client.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._addPeer" id="apidoc.element.bittorrent-dht.Client.prototype._addPeer">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_addPeer
+        <span class="apidocSignatureSpan">(peer, infoHash, from)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_addPeer = function (peer, infoHash, from) {
+  this._peers.add(infoHash.toString(&#x27;hex&#x27;), encodePeer(peer.host, peer.port))
+  this.emit(&#x27;announce&#x27;, peer, infoHash, from)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (!cb) cb = noop
+
+var table = this._tables.get(infoHash.toString(&#x27;hex&#x27;))
+if (!table) return this._preannounce(infoHash, port, cb)
+
+if (this._host) {
+  var dhtPort = this.listening ? this.address().port : 0
+  this.<span class="apidocCodeKeywordSpan">_addPeer</span>(
+    {host: this._host, port: port || dhtPort},
+    infoHash,
+    {host: this._host, port: dhtPort}
+  )
+}
+
+var message = {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._bootstrap" id="apidoc.element.bittorrent-dht.Client.prototype._bootstrap">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_bootstrap
+        <span class="apidocSignatureSpan">(populate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_bootstrap = function (populate) {
+  var self = this
+  if (!populate) return process.nextTick(ready)
+
+  this._rpc.populate(self._rpc.id, {
+    q: &#x27;find_node&#x27;,
+    a: {
+      id: self._rpc.id,
+      target: self._rpc.id
+    }
+  }, ready)
+
+  function ready () {
+    self._debug(&#x27;emit ready&#x27;)
+    self.ready = true
+    self.emit(&#x27;ready&#x27;)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+function rotateSecrets () {
+  self._rotateSecrets()
+}
+
+function bootstrap () {
+  if (!self.destroyed) self.<span class="apidocCodeKeywordSpan">_bootstrap</span>(opts.bootstrap !== false)
+}
+
+function onwarning (err) {
+  self.emit(&#x27;warning&#x27;, err)
+}
+
+function onerror (err) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._closest" id="apidoc.element.bittorrent-dht.Client.prototype._closest">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_closest
+        <span class="apidocSignatureSpan">(target, message, onmessage, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_closest = function (target, message, onmessage, cb) {
+  var self = this
+
+  var table = new KBucket({
+    localNodeId: target,
+    numberOfNodesPerKBucket: this._rpc.k
+  })
+
+  this._rpc.closest(target, message, onreply, done)
+
+  function done (err, n) {
+    if (err) return cb(err)
+    self._tables.set(target.toString(&#x27;hex&#x27;), table)
+    self._debug(&#x27;visited %d nodes&#x27;, n)
+    cb(null, n)
+  }
+
+  function onreply (message, node) {
+    if (!message.r) return true
+
+    if (message.r.token &#x26;&#x26; message.r.id &#x26;&#x26; Buffer.isBuffer(message.r.id) &#x26;&#x26; message.r.id.length === 20) {
+      self._debug(&#x27;found node %s (target: %s)&#x27;, message.r.id, target)
+      table.add({
+        id: message.r.id,
+        host: node.host || node.address,
+        port: node.port,
+        token: message.r.token
+      })
+    }
+
+    if (!onmessage) return true
+    return onmessage(message, node)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+return key
+}
+
+DHT.prototype._preput = function (key, opts, cb) {
+var self = this
+
+this.<span class="apidocCodeKeywordSpan">_closest</span>(key, {
+  q: &#x27;get&#x27;,
+  a: {
+    id: this._rpc.id,
+    target: key
+  }
+}, null, function (err, n) {
+  if (err) return cb(err)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._debug" id="apidoc.element.bittorrent-dht.Client.prototype._debug">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_debug
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_debug = function () {
+  if (!debug.enabled) return
+  var args = [].slice.call(arguments)
+  args[0] = &#x27;[&#x27; + this.nodeId.toString(&#x27;hex&#x27;).substring(0, 7) + &#x27;] &#x27; + args[0]
+  for (var i = 1; i &#x3c; args.length; i++) {
+    if (Buffer.isBuffer(args[i])) args[i] = args[i].toString(&#x27;hex&#x27;)
+  }
+  debug.apply(null, args)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this.destroyed = false
+this.nodeId = this._rpc.id
+this.nodes = this._rpc.nodes
+
+process.nextTick(bootstrap)
+
+EventEmitter.call(this)
+this.<span class="apidocCodeKeywordSpan">_debug</span>(&#x27;new DHT %s&#x27;, this.nodeId)
+
+function onlistening () {
+  self.listening = true
+  self._debug(&#x27;listening %d&#x27;, self.address().port)
+  self.emit(&#x27;listening&#x27;)
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._generateToken" id="apidoc.element.bittorrent-dht.Client.prototype._generateToken">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_generateToken
+        <span class="apidocSignatureSpan">(host, secret)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_generateToken = function (host, secret) {
+  if (!secret) secret = this._secrets[0]
+  return crypto.createHash(&#x27;sha1&#x27;).update(Buffer.from(host)).update(secret).digest()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+DHT.prototype._ongetpeers = function (query, peer) {
+var host = peer.address || peer.host
+var infoHash = query.a.info_hash
+if (!infoHash) return this._rpc.error(peer, query, [203, &#x27;`get_peers` missing required `a.info_hash` field&#x27;])
+
+this.emit(&#x27;get_peers&#x27;, infoHash)
+
+var r = {id: this._rpc.id, token: this.<span class="apidocCodeKeywordSpan">_generateToken</span>(host)}
+var peers = this._peers.get(infoHash.toString(&#x27;hex&#x27;))
+
+if (peers.length) {
+  r.values = peers
+  this._rpc.response(peer, query, r)
+} else {
+  this._rpc.response(peer, query, r, this._rpc.nodes.closest(infoHash))
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._onannouncepeer" id="apidoc.element.bittorrent-dht.Client.prototype._onannouncepeer">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onannouncepeer
+        <span class="apidocSignatureSpan">(query, peer)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_onannouncepeer = function (query, peer) {
+  var host = peer.address || peer.host
+  var port = query.a.implied_port ? peer.port : query.a.port
+  if (!port || typeof port !== &#x27;number&#x27;) return
+  var infoHash = query.a.info_hash
+  var token = query.a.token
+  if (!infoHash || !token) return
+
+  if (!this._validateToken(host, token)) {
+    return this._rpc.error(peer, query, [203, &#x27;cannot `announce_peer` with bad token&#x27;])
+  }
+
+  this.emit(&#x27;announce_peer&#x27;, infoHash, {host: host, port: peer.port})
+
+  this._addPeer({host: host, port: port}, infoHash, {host: host, port: peer.port})
+  this._rpc.response(peer, query, {id: this._rpc.id})
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  case &#x27;find_node&#x27;:
+    return this._onfindnode(query, peer)
+
+  case &#x27;get_peers&#x27;:
+    return this._ongetpeers(query, peer)
+
+  case &#x27;announce_peer&#x27;:
+    return this.<span class="apidocCodeKeywordSpan">_onannouncepeer</span>(query, peer)
+
+  case &#x27;get&#x27;:
+    return this._onget(query, peer)
+
+  case &#x27;put&#x27;:
+    return this._onput(query, peer)
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._onfindnode" id="apidoc.element.bittorrent-dht.Client.prototype._onfindnode">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onfindnode
+        <span class="apidocSignatureSpan">(query, peer)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_onfindnode = function (query, peer) {
+  var target = query.a.target
+  if (!target) return this._rpc.error(peer, query, [203, &#x27;`find_node` missing required `a.target` field&#x27;])
+
+  this.emit(&#x27;find_node&#x27;, target)
+
+  var nodes = this._rpc.nodes.closest(target)
+  this._rpc.response(peer, query, {id: this._rpc.id}, nodes)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (!query.a) return
+
+  switch (q) {
+case &#x27;ping&#x27;:
+  return this._rpc.response(peer, query, {id: this._rpc.id})
+
+case &#x27;find_node&#x27;:
+  return this.<span class="apidocCodeKeywordSpan">_onfindnode</span>(query, peer)
+
+case &#x27;get_peers&#x27;:
+  return this._ongetpeers(query, peer)
+
+case &#x27;announce_peer&#x27;:
+  return this._onannouncepeer(query, peer)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._onget" id="apidoc.element.bittorrent-dht.Client.prototype._onget">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onget
+        <span class="apidocSignatureSpan">(query, peer)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_onget = function (query, peer) {
+  var host = peer.address || peer.host
+  var target = query.a.target
+  if (!target) return
+  var token = this._generateToken(host)
+  var value = this._values.get(target.toString(&#x27;hex&#x27;))
+
+  this.emit(&#x27;get&#x27;, target, value)
+
+  if (!value) {
+    var nodes = this._rpc.nodes.closest(target)
+    this._rpc.response(peer, query, {id: this._rpc.id, token: token}, nodes)
+  } else {
+    this._rpc.response(peer, query, createGetResponse(this._rpc.id, token, value))
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    case &#x27;get_peers&#x27;:
+      return this._ongetpeers(query, peer)
+
+    case &#x27;announce_peer&#x27;:
+      return this._onannouncepeer(query, peer)
+
+    case &#x27;get&#x27;:
+      return this.<span class="apidocCodeKeywordSpan">_onget</span>(query, peer)
+
+    case &#x27;put&#x27;:
+      return this._onput(query, peer)
+  }
+}
+
+DHT.prototype._onfindnode = function (query, peer) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._ongetpeers" id="apidoc.element.bittorrent-dht.Client.prototype._ongetpeers">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_ongetpeers
+        <span class="apidocSignatureSpan">(query, peer)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_ongetpeers = function (query, peer) {
+  var host = peer.address || peer.host
+  var infoHash = query.a.info_hash
+  if (!infoHash) return this._rpc.error(peer, query, [203, &#x27;`get_peers` missing required `a.info_hash` field&#x27;])
+
+  this.emit(&#x27;get_peers&#x27;, infoHash)
+
+  var r = {id: this._rpc.id, token: this._generateToken(host)}
+  var peers = this._peers.get(infoHash.toString(&#x27;hex&#x27;))
+
+  if (peers.length) {
+    r.values = peers
+    this._rpc.response(peer, query, r)
+  } else {
+    this._rpc.response(peer, query, r, this._rpc.nodes.closest(infoHash))
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+case &#x27;ping&#x27;:
+  return this._rpc.response(peer, query, {id: this._rpc.id})
+
+case &#x27;find_node&#x27;:
+  return this._onfindnode(query, peer)
+
+case &#x27;get_peers&#x27;:
+  return this.<span class="apidocCodeKeywordSpan">_ongetpeers</span>(query, peer)
+
+case &#x27;announce_peer&#x27;:
+  return this._onannouncepeer(query, peer)
+
+case &#x27;get&#x27;:
+  return this._onget(query, peer)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._onput" id="apidoc.element.bittorrent-dht.Client.prototype._onput">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onput
+        <span class="apidocSignatureSpan">(query, peer)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_onput = function (query, peer) {
+  var host = peer.address || peer.host
+
+  var a = query.a
+  if (!a) return
+  var v = query.a.v
+  if (!v) return
+  var id = query.a.id
+  if (!id) return
+
+  var token = a.token
+  if (!token) return
+
+  if (!this._validateToken(host, token)) {
+    return this._rpc.error(peer, query, [203, &#x27;cannot `put` with bad token&#x27;])
+  }
+  if (v.length &#x3e; 1000) {
+    return this._rpc.error(peer, query, [205, &#x27;data payload too large&#x27;])
+  }
+
+  var isMutable = !!(a.k || a.sig)
+  if (isMutable &#x26;&#x26; !a.k &#x26;&#x26; !a.sig) return
+
+  var key = isMutable
+    ? this._hash(a.salt ? Buffer.concat([a.k, a.salt]) : a.k)
+    : this._hash(bencode.encode(v))
+  var keyHex = key.toString(&#x27;hex&#x27;)
+
+  this.emit(&#x27;put&#x27;, key, v)
+
+  if (isMutable) {
+    if (!this._verify) return this._rpc.error(peer, query, [400, &#x27;verification not supported&#x27;])
+    if (!this._verify(a.sig, encodeSigData(a), a.k)) return
+    var prev = this._values.get(keyHex)
+    if (prev &#x26;&#x26; typeof a.cas === &#x27;number&#x27; &#x26;&#x26; prev.seq !== a.cas) {
+      return this._rpc.error(peer, query, [301, &#x27;CAS mismatch, re-read and try again&#x27;])
+    }
+    if (prev &#x26;&#x26; typeof prev.seq === &#x27;number&#x27; &#x26;&#x26; !(a.seq &#x3e; prev.seq)) {
+      return this._rpc.error(peer, query, [302, &#x27;sequence number less than current&#x27;])
+    }
+    this._values.set(keyHex, {v: v, k: a.k, salt: a.salt, sig: a.sig, seq: a.seq, id: id})
+  } else {
+    this._values.set(keyHex, {v: v, id: id})
+  }
+
+  this._rpc.response(peer, query, {id: this._rpc.id})
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  case &#x27;announce_peer&#x27;:
+    return this._onannouncepeer(query, peer)
+
+  case &#x27;get&#x27;:
+    return this._onget(query, peer)
+
+  case &#x27;put&#x27;:
+    return this.<span class="apidocCodeKeywordSpan">_onput</span>(query, peer)
+}
+}
+
+DHT.prototype._onfindnode = function (query, peer) {
+var target = query.a.target
+if (!target) return this._rpc.error(peer, query, [203, &#x27;`find_node` missing required `a.target` field&#x27;])
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._onquery" id="apidoc.element.bittorrent-dht.Client.prototype._onquery">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_onquery
+        <span class="apidocSignatureSpan">(query, peer)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_onquery = function (query, peer) {
+  var q = query.q.toString()
+  this._debug(&#x27;received %s query from %s:%d&#x27;, q, peer.address, peer.port)
+  if (!query.a) return
+
+  switch (q) {
+    case &#x27;ping&#x27;:
+      return this._rpc.response(peer, query, {id: this._rpc.id})
+
+    case &#x27;find_node&#x27;:
+      return this._onfindnode(query, peer)
+
+    case &#x27;get_peers&#x27;:
+      return this._ongetpeers(query, peer)
+
+    case &#x27;announce_peer&#x27;:
+      return this._onannouncepeer(query, peer)
+
+    case &#x27;get&#x27;:
+      return this._onget(query, peer)
+
+    case &#x27;put&#x27;:
+      return this._onput(query, peer)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+function onlistening () {
+  self.listening = true
+  self._debug(&#x27;listening %d&#x27;, self.address().port)
+  self.emit(&#x27;listening&#x27;)
+}
+
+function onquery (query, peer) {
+  self.<span class="apidocCodeKeywordSpan">_onquery</span>(query, peer)
+}
+
+function rotateSecrets () {
+  self._rotateSecrets()
+}
+
+function bootstrap () {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._preannounce" id="apidoc.element.bittorrent-dht.Client.prototype._preannounce">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_preannounce
+        <span class="apidocSignatureSpan">(infoHash, port, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_preannounce = function (infoHash, port, cb) {
+  var self = this
+
+  this.lookup(infoHash, function (err) {
+    if (self.destroyed) return cb(new Error(&#x27;dht is destroyed&#x27;))
+    if (err) return cb(err)
+    self.announce(infoHash, port, cb)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+DHT.prototype.announce = function (infoHash, port, cb) {
+if (typeof port === &#x27;function&#x27;) return this.announce(infoHash, 0, port)
+infoHash = toBuffer(infoHash)
+if (!cb) cb = noop
+
+var table = this._tables.get(infoHash.toString(&#x27;hex&#x27;))
+if (!table) return this.<span class="apidocCodeKeywordSpan">_preannounce</span>(infoHash, port, cb)
+
+if (this._host) {
+  var dhtPort = this.listening ? this.address().port : 0
+  this._addPeer(
+    {host: this._host, port: port || dhtPort},
+    infoHash,
+    {host: this._host, port: dhtPort}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._preput" id="apidoc.element.bittorrent-dht.Client.prototype._preput">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_preput
+        <span class="apidocSignatureSpan">(key, opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_preput = function (key, opts, cb) {
+  var self = this
+
+  this._closest(key, {
+    q: &#x27;get&#x27;,
+    a: {
+      id: this._rpc.id,
+      target: key
+    }
+  }, null, function (err, n) {
+    if (err) return cb(err)
+    self.put(opts, cb)
+  })
+
+  return key
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var isMutable = !!opts.k
+var v = typeof opts.v === &#x27;string&#x27; ? Buffer.from(opts.v) : opts.v
+var key = isMutable
+  ? this._hash(opts.salt ? Buffer.concat([opts.k, opts.salt]) : opts.k)
+  : this._hash(bencode.encode(v))
+
+var table = this._tables.get(key.toString(&#x27;hex&#x27;))
+if (!table) return this.<span class="apidocCodeKeywordSpan">_preput</span>(key, opts, cb)
+
+var message = {
+  q: &#x27;put&#x27;,
+  a: {
+    id: this._rpc.id,
+    token: null, // queryAll sets this
+    v: v
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._put" id="apidoc.element.bittorrent-dht.Client.prototype._put">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_put
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_put = function (opts, cb) {
+  if (!cb) cb = noop
+
+  var isMutable = !!opts.k
+  var v = typeof opts.v === &#x27;string&#x27; ? Buffer.from(opts.v) : opts.v
+  var key = isMutable
+    ? this._hash(opts.salt ? Buffer.concat([opts.k, opts.salt]) : opts.k)
+    : this._hash(bencode.encode(v))
+
+  var table = this._tables.get(key.toString(&#x27;hex&#x27;))
+  if (!table) return this._preput(key, opts, cb)
+
+  var message = {
+    q: &#x27;put&#x27;,
+    a: {
+      id: this._rpc.id,
+      token: null, // queryAll sets this
+      v: v
+    }
+  }
+
+  if (isMutable) {
+    if (typeof opts.cas === &#x27;number&#x27;) message.a.cas = opts.cas
+    if (opts.salt) message.a.salt = opts.salt
+    message.a.k = opts.k
+    message.a.seq = opts.seq
+    if (typeof opts.sign === &#x27;function&#x27;) message.a.sig = opts.sign(encodeSigData(message.a))
+    else if (Buffer.isBuffer(opts.sig)) message.a.sig = opts.sig
+  }
+
+  this._values.set(key.toString(&#x27;hex&#x27;), message.a)
+  this._rpc.queryAll(table.closest(key), message, null, function (err, n) {
+    if (err) return cb(err, key, n)
+    cb(null, key, n)
+  })
+
+  return key
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (isMutable &#x26;&#x26; opts.seq === undefined) {
+  throw new Error(&#x27;opts.seq not provided for a mutable update&#x27;)
+}
+if (isMutable &#x26;&#x26; typeof opts.seq !== &#x27;number&#x27;) {
+  throw new Error(&#x27;opts.seq not an integer&#x27;)
+}
+
+return this.<span class="apidocCodeKeywordSpan">_put</span>(opts, cb)
+}
+
+DHT.prototype._put = function (opts, cb) {
+if (!cb) cb = noop
+
+var isMutable = !!opts.k
+var v = typeof opts.v === &#x27;string&#x27; ? Buffer.from(opts.v) : opts.v
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._rotateSecrets" id="apidoc.element.bittorrent-dht.Client.prototype._rotateSecrets">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_rotateSecrets
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_rotateSecrets = function () {
+  if (!this._secrets) {
+    this._secrets = [crypto.randomBytes(20), crypto.randomBytes(20)]
+  } else {
+    this._secrets[1] = this._secrets[0]
+    this._secrets[0] = crypto.randomBytes(20)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+this._secrets = null
+this._rpc = krpc(opts)
+this._rpc.on(&#x27;query&#x27;, onquery)
+this._rpc.on(&#x27;node&#x27;, onnode)
+this._rpc.on(&#x27;warning&#x27;, onwarning)
+this._rpc.on(&#x27;error&#x27;, onerror)
+this._rpc.on(&#x27;listening&#x27;, onlistening)
+this.<span class="apidocCodeKeywordSpan">_rotateSecrets</span>()
+this._verify = opts.verify || null
+this._host = opts.host || null
+this._interval = setInterval(rotateSecrets, ROTATE_INTERVAL)
+this._hash = opts.hash || sha1
+
+this.listening = false
+this.destroyed = false
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._sendPing" id="apidoc.element.bittorrent-dht.Client.prototype._sendPing">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_sendPing
+        <span class="apidocSignatureSpan">(node, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_sendPing = function (node, cb) {
+  this._rpc.query(node, {q: &#x27;ping&#x27;}, function (err, pong, node) {
+    if (err) return cb(err)
+    if (!pong.r || !pong.r.id || !Buffer.isBuffer(pong.r.id) || pong.r.id.length !== 20) {
+      return cb(new Error(&#x27;Bad reply&#x27;))
+    }
+    cb(null, {
+      id: pong.r.id,
+      host: node.host || node.address,
+      port: node.port
+    })
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (node.id) {
+    node.id = toBuffer(node.id)
+    var old = !!this._rpc.nodes.get(node.id)
+    this._rpc.nodes.add(node)
+    if (!old) this.emit(&#x27;node&#x27;, node)
+    return
+  }
+  this.<span class="apidocCodeKeywordSpan">_sendPing</span>(node, function (_, node) {
+    if (node) self.addNode(node)
+  })
+}
+
+DHT.prototype.removeNode = function (id) {
+  this._rpc.nodes.remove(toBuffer(id))
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype._validateToken" id="apidoc.element.bittorrent-dht.Client.prototype._validateToken">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>_validateToken
+        <span class="apidocSignatureSpan">(host, token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_validateToken = function (host, token) {
+  var tokenA = this._generateToken(host, this._secrets[0])
+  var tokenB = this._generateToken(host, this._secrets[1])
+  return equals(token, tokenA) || equals(token, tokenB)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var host = peer.address || peer.host
+var port = query.a.implied_port ? peer.port : query.a.port
+if (!port || typeof port !== &#x27;number&#x27;) return
+var infoHash = query.a.info_hash
+var token = query.a.token
+if (!infoHash || !token) return
+
+if (!this.<span class="apidocCodeKeywordSpan">_validateToken</span>(host, token)) {
+  return this._rpc.error(peer, query, [203, &#x27;cannot `announce_peer` with bad token&#x27;])
+}
+
+this.emit(&#x27;announce_peer&#x27;, infoHash, {host: host, port: peer.port})
+
+this._addPeer({host: host, port: port}, infoHash, {host: host, port: peer.port})
+this._rpc.response(peer, query, {id: this._rpc.id})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.addNode" id="apidoc.element.bittorrent-dht.Client.prototype.addNode">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>addNode
+        <span class="apidocSignatureSpan">(node)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addNode = function (node) {
+  var self = this
+  if (node.id) {
+    node.id = toBuffer(node.id)
+    var old = !!this._rpc.nodes.get(node.id)
+    this._rpc.nodes.add(node)
+    if (!old) this.emit(&#x27;node&#x27;, node)
+    return
+  }
+  this._sendPing(node, function (_, node) {
+    if (node) self.addNode(node)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    node.id = toBuffer(node.id)
+    var old = !!this._rpc.nodes.get(node.id)
+    this._rpc.nodes.add(node)
+    if (!old) this.emit(&#x27;node&#x27;, node)
+    return
+  }
+  this._sendPing(node, function (_, node) {
+    if (node) self.<span class="apidocCodeKeywordSpan">addNode</span>(node)
+  })
+}
+
+DHT.prototype.removeNode = function (id) {
+  this._rpc.nodes.remove(toBuffer(id))
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.address" id="apidoc.element.bittorrent-dht.Client.prototype.address">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>address
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">address = function () {
+  return this._rpc.address()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+process.nextTick(bootstrap)
+
+EventEmitter.call(this)
+this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+
+function onlistening () {
+  self.listening = true
+  self._debug(&#x27;listening %d&#x27;, self.<span class="apidocCodeKeywordSpan">address</span>().port)
+  self.emit(&#x27;listening&#x27;)
+}
+
+function onquery (query, peer) {
+  self._onquery(query, peer)
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.announce" id="apidoc.element.bittorrent-dht.Client.prototype.announce">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>announce
+        <span class="apidocSignatureSpan">(infoHash, port, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">announce = function (infoHash, port, cb) {
+  if (typeof port === &#x27;function&#x27;) return this.announce(infoHash, 0, port)
+  infoHash = toBuffer(infoHash)
+  if (!cb) cb = noop
+
+  var table = this._tables.get(infoHash.toString(&#x27;hex&#x27;))
+  if (!table) return this._preannounce(infoHash, port, cb)
+
+  if (this._host) {
+    var dhtPort = this.listening ? this.address().port : 0
+    this._addPeer(
+      {host: this._host, port: port || dhtPort},
+      infoHash,
+      {host: this._host, port: dhtPort}
+    )
+  }
+
+  var message = {
+    q: &#x27;announce_peer&#x27;,
+    a: {
+      id: this._rpc.id,
+      token: null, // queryAll sets this
+      info_hash: infoHash,
+      port: port,
+      implied_port: port ? 0 : 1
+    }
+  }
+
+  this._debug(&#x27;announce %s %d&#x27;, infoHash, port)
+  this._rpc.queryAll(table.closest(infoHash), message, null, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  }
+
+  return true
+}
+}
+
+DHT.prototype.announce = function (infoHash, port, cb) {
+if (typeof port === &#x27;function&#x27;) return this.<span class="apidocCodeKeywordSpan">announce</span>(infoHash, 0, port)
+infoHash = toBuffer(infoHash)
+if (!cb) cb = noop
+
+var table = this._tables.get(infoHash.toString(&#x27;hex&#x27;))
+if (!table) return this._preannounce(infoHash, port, cb)
+
+if (this._host) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.destroy" id="apidoc.element.bittorrent-dht.Client.prototype.destroy">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>destroy
+        <span class="apidocSignatureSpan">(cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">destroy = function (cb) {
+  if (this.destroyed) {
+    if (cb) process.nextTick(cb)
+    return
+  }
+  this.destroyed = true
+  var self = this
+  clearInterval(this._interval)
+  this._debug(&#x27;destroying&#x27;)
+  this._rpc.destroy(function () {
+    self.emit(&#x27;close&#x27;)
+    if (cb) cb()
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (cb) process.nextTick(cb)
+  return
+}
+this.destroyed = true
+var self = this
+clearInterval(this._interval)
+this._debug(&#x27;destroying&#x27;)
+this._rpc.<span class="apidocCodeKeywordSpan">destroy</span>(function () {
+  self.emit(&#x27;close&#x27;)
+  if (cb) cb()
+})
+}
+
+DHT.prototype._onquery = function (query, peer) {
+var q = query.q.toString()
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.get" id="apidoc.element.bittorrent-dht.Client.prototype.get">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>get
+        <span class="apidocSignatureSpan">(key, opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (key, opts, cb) {
+  key = toBuffer(key)
+  if (typeof opts === &#x27;function&#x27;) {
+    cb = opts
+    opts = null
+  }
+
+  if (!opts) opts = {}
+  var verify = opts.verify || this._verify
+  var hash = this._hash
+  var value = this._values.get(key.toString(&#x27;hex&#x27;)) || null
+
+  if (value) {
+    value = createGetResponse(this._rpc.id, null, value)
+    return process.nextTick(done)
+  }
+
+  this._closest(key, {
+    q: &#x27;get&#x27;,
+    a: {
+      id: this._rpc.id,
+      target: key
+    }
+  }, onreply, done)
+
+  function done (err) {
+    if (err) return cb(err)
+    cb(null, value)
+  }
+
+  function onreply (message) {
+    var r = message.r
+    if (!r || !r.v) return true
+
+    var isMutable = r.k || r.sig
+
+    if (isMutable) {
+      if (!verify || !r.sig || !r.k) return true
+      if (!verify(r.sig, encodeSigData(r), r.k)) return true
+      if (equals(hash(r.salt ? Buffer.concat([r.k, r.salt]) : r.k), key)) {
+        value = r
+        return false
+      }
+    } else {
+      if (equals(hash(bencode.encode(r.v)), key)) {
+        value = r
+        return false
+      }
+    }
+
+    return true
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+}
+
+DHT.prototype.addNode = function (node) {
+var self = this
+if (node.id) {
+  node.id = toBuffer(node.id)
+  var old = !!this._rpc.nodes.<span class="apidocCodeKeywordSpan">get</span>(node.id)
+  this._rpc.nodes.add(node)
+  if (!old) this.emit(&#x27;node&#x27;, node)
+  return
+}
+this._sendPing(node, function (_, node) {
+  if (node) self.addNode(node)
+})
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.listen" id="apidoc.element.bittorrent-dht.Client.prototype.listen">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>listen
+        <span class="apidocSignatureSpan">(port, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">listen = function (port, cb) {
+  if (typeof port === &#x27;function&#x27;) return this.listen(0, port)
+  this._rpc.bind(port, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+DHT.prototype.address = function () {
+return this._rpc.address()
+}
+
+DHT.prototype.listen = function (port, cb) {
+if (typeof port === &#x27;function&#x27;) return this.<span class="apidocCodeKeywordSpan">listen</span>(0, port)
+this._rpc.bind(port, cb)
+}
+
+DHT.prototype.destroy = function (cb) {
+if (this.destroyed) {
+  if (cb) process.nextTick(cb)
+  return
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.lookup" id="apidoc.element.bittorrent-dht.Client.prototype.lookup">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>lookup
+        <span class="apidocSignatureSpan">(infoHash, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">lookup = function (infoHash, cb) {
+  infoHash = toBuffer(infoHash)
+  if (!cb) cb = noop
+  var self = this
+  var aborted = false
+
+  this._debug(&#x27;lookup %s&#x27;, infoHash)
+  process.nextTick(emit)
+  this._closest(infoHash, {
+    q: &#x27;get_peers&#x27;,
+    a: {
+      id: this._rpc.id,
+      info_hash: infoHash
+    }
+  }, onreply, cb)
+
+  function emit (values, from) {
+    if (!values) values = self._peers.get(infoHash.toString(&#x27;hex&#x27;))
+    var peers = decodePeers(values)
+    for (var i = 0; i &#x3c; peers.length; i++) {
+      self.emit(&#x27;peer&#x27;, peers[i], infoHash, from || null)
+    }
+  }
+
+  function onreply (message, node) {
+    if (aborted) return false
+    if (message.r.values) emit(message.r.values, node)
+  }
+
+  return function abort () { aborted = true }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  this._debug(&#x27;announce %s %d&#x27;, infoHash, port)
+  this._rpc.queryAll(table.closest(infoHash), message, null, cb)
+}
+
+DHT.prototype._preannounce = function (infoHash, port, cb) {
+  var self = this
+
+  this.<span class="apidocCodeKeywordSpan">lookup</span>(infoHash, function (err) {
+    if (self.destroyed) return cb(new Error(&#x27;dht is destroyed&#x27;))
+    if (err) return cb(err)
+    self.announce(infoHash, port, cb)
+  })
+}
+
+DHT.prototype.lookup = function (infoHash, cb) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.put" id="apidoc.element.bittorrent-dht.Client.prototype.put">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>put
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">put = function (opts, cb) {
+  if (Buffer.isBuffer(opts) || typeof opts === &#x27;string&#x27;) opts = {v: opts}
+  var isMutable = !!opts.k
+  if (opts.v === undefined) {
+    throw new Error(&#x27;opts.v not given&#x27;)
+  }
+  if (opts.v.length &#x3e;= 1000) {
+    throw new Error(&#x27;v must be less than 1000 bytes in put()&#x27;)
+  }
+  if (isMutable &#x26;&#x26; opts.cas !== undefined &#x26;&#x26; typeof opts.cas !== &#x27;number&#x27;) {
+    throw new Error(&#x27;opts.cas must be an integer if provided&#x27;)
+  }
+  if (isMutable &#x26;&#x26; !opts.k) {
+    throw new Error(&#x27;opts.k ed25519 public key required for mutable put&#x27;)
+  }
+  if (isMutable &#x26;&#x26; opts.k.length !== 32) {
+    throw new Error(&#x27;opts.k ed25519 public key must be 32 bytes&#x27;)
+  }
+  if (isMutable &#x26;&#x26; typeof opts.sign !== &#x27;function&#x27; &#x26;&#x26; !Buffer.isBuffer(opts.sig)) {
+    throw new Error(&#x27;opts.sign function or options.sig signature is required for mutable put&#x27;)
+  }
+  if (isMutable &#x26;&#x26; opts.salt &#x26;&#x26; opts.salt.length &#x3e; 64) {
+    throw new Error(&#x27;opts.salt is &#x3e; 64 bytes long&#x27;)
+  }
+  if (isMutable &#x26;&#x26; opts.seq === undefined) {
+    throw new Error(&#x27;opts.seq not provided for a mutable update&#x27;)
+  }
+  if (isMutable &#x26;&#x26; typeof opts.seq !== &#x27;number&#x27;) {
+    throw new Error(&#x27;opts.seq not an integer&#x27;)
+  }
+
+  return this._put(opts, cb)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  q: &#x27;get&#x27;,
+  a: {
+    id: this._rpc.id,
+    target: key
+  }
+}, null, function (err, n) {
+  if (err) return cb(err)
+  self.<span class="apidocCodeKeywordSpan">put</span>(opts, cb)
+})
+
+return key
+}
+
+DHT.prototype.get = function (key, opts, cb) {
+key = toBuffer(key)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.removeNode" id="apidoc.element.bittorrent-dht.Client.prototype.removeNode">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>removeNode
+        <span class="apidocSignatureSpan">(id)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeNode = function (id) {
+  this._rpc.nodes.remove(toBuffer(id))
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.bittorrent-dht.Client.prototype.toJSON" id="apidoc.element.bittorrent-dht.Client.prototype.toJSON">
+        function <span class="apidocSignatureSpan">bittorrent-dht.Client.prototype.</span>toJSON
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toJSON = function () {
+  var self = this
+  var values = {}
+  Object.keys(this._values.cache).forEach(function (key) {
+    var value = self._values.cache[key].value
+    values[key] = {
+      v: value.v.toString(&#x27;hex&#x27;),
+      id: value.id.toString(&#x27;hex&#x27;)
+    }
+    if (value.seq != null) values[key].seq = value.seq
+    if (value.sig != null) values[key].sig = value.sig.toString(&#x27;hex&#x27;)
+    if (value.k != null) values[key].k = value.k.toString(&#x27;hex&#x27;)
+  })
+  return {
+    nodes: this._rpc.nodes.toArray().map(toNode),
+    values: values
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+signing up other hosts for torrents. **All token management is handled internally by this
+module.**
+
+`callback` will be called when the announce operation has completed, and is called with
+a single parameter that is an `Error` or null.
+
+
+#### `arr = dht.<span class="apidocCodeKeywordSpan">toJSON</span>()`
+
+Returns the current state of the DHT, including DHT nodes and BEP44 values.
+
+```json
+{
+&#x22;nodes&#x22;: [],
+&#x22;values&#x22;: {}
+...</pre></li>
     </ul>
 
 

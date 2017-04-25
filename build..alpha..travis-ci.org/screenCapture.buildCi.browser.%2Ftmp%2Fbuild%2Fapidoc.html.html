@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/webtorrent/bittorrent-dht#readme"
-
-    >bittorrent-dht (v7.5.3)</a>
+    <a href="https://github.com/webtorrent/bittorrent-dht#readme">bittorrent-dht (v7.5.3)</a>
 </h1>
 <h4>Simple, robust, BitTorrent DHT implementation</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.bittorrent-dht">module bittorrent-dht</a><ol>
 
@@ -408,11 +401,11 @@
 
   this._secrets = null
   this._rpc = krpc(opts)
-  this._rpc.on(&#x27;query&#x27;, onquery)
-  this._rpc.on(&#x27;node&#x27;, onnode)
-  this._rpc.on(&#x27;warning&#x27;, onwarning)
-  this._rpc.on(&#x27;error&#x27;, onerror)
-  this._rpc.on(&#x27;listening&#x27;, onlistening)
+  this._rpc.on('query', onquery)
+  this._rpc.on('node', onnode)
+  this._rpc.on('warning', onwarning)
+  this._rpc.on('error', onerror)
+  this._rpc.on('listening', onlistening)
   this._rotateSecrets()
   this._verify = opts.verify || null
   this._host = opts.host || null
@@ -427,12 +420,12 @@
   process.nextTick(bootstrap)
 
   EventEmitter.call(this)
-  this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+  this._debug('new DHT %s', this.nodeId)
 
   function onlistening () {
     self.listening = true
-    self._debug(&#x27;listening %d&#x27;, self.address().port)
-    self.emit(&#x27;listening&#x27;)
+    self._debug('listening %d', self.address().port)
+    self.emit('listening')
   }
 
   function onquery (query, peer) {
@@ -448,15 +441,15 @@
   }
 
   function onwarning (err) {
-    self.emit(&#x27;warning&#x27;, err)
+    self.emit('warning', err)
   }
 
   function onerror (err) {
-    self.emit(&#x27;error&#x27;, err)
+    self.emit('error', err)
   }
 
   function onnode (node) {
-    self.emit(&#x27;node&#x27;, node)
+    self.emit('node', node)
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -483,11 +476,11 @@
 
   this._secrets = null
   this._rpc = krpc(opts)
-  this._rpc.on(&#x27;query&#x27;, onquery)
-  this._rpc.on(&#x27;node&#x27;, onnode)
-  this._rpc.on(&#x27;warning&#x27;, onwarning)
-  this._rpc.on(&#x27;error&#x27;, onerror)
-  this._rpc.on(&#x27;listening&#x27;, onlistening)
+  this._rpc.on('query', onquery)
+  this._rpc.on('node', onnode)
+  this._rpc.on('warning', onwarning)
+  this._rpc.on('error', onerror)
+  this._rpc.on('listening', onlistening)
   this._rotateSecrets()
   this._verify = opts.verify || null
   this._host = opts.host || null
@@ -502,12 +495,12 @@
   process.nextTick(bootstrap)
 
   EventEmitter.call(this)
-  this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+  this._debug('new DHT %s', this.nodeId)
 
   function onlistening () {
     self.listening = true
-    self._debug(&#x27;listening %d&#x27;, self.address().port)
-    self.emit(&#x27;listening&#x27;)
+    self._debug('listening %d', self.address().port)
+    self.emit('listening')
   }
 
   function onquery (query, peer) {
@@ -523,15 +516,15 @@
   }
 
   function onwarning (err) {
-    self.emit(&#x27;warning&#x27;, err)
+    self.emit('warning', err)
   }
 
   function onerror (err) {
-    self.emit(&#x27;error&#x27;, err)
+    self.emit('error', err)
   }
 
   function onnode (node) {
-    self.emit(&#x27;node&#x27;, node)
+    self.emit('node', node)
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -558,11 +551,11 @@
 
   this._secrets = null
   this._rpc = krpc(opts)
-  this._rpc.on(&#x27;query&#x27;, onquery)
-  this._rpc.on(&#x27;node&#x27;, onnode)
-  this._rpc.on(&#x27;warning&#x27;, onwarning)
-  this._rpc.on(&#x27;error&#x27;, onerror)
-  this._rpc.on(&#x27;listening&#x27;, onlistening)
+  this._rpc.on('query', onquery)
+  this._rpc.on('node', onnode)
+  this._rpc.on('warning', onwarning)
+  this._rpc.on('error', onerror)
+  this._rpc.on('listening', onlistening)
   this._rotateSecrets()
   this._verify = opts.verify || null
   this._host = opts.host || null
@@ -577,12 +570,12 @@
   process.nextTick(bootstrap)
 
   EventEmitter.call(this)
-  this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+  this._debug('new DHT %s', this.nodeId)
 
   function onlistening () {
     self.listening = true
-    self._debug(&#x27;listening %d&#x27;, self.address().port)
-    self.emit(&#x27;listening&#x27;)
+    self._debug('listening %d', self.address().port)
+    self.emit('listening')
   }
 
   function onquery (query, peer) {
@@ -598,15 +591,15 @@
   }
 
   function onwarning (err) {
-    self.emit(&#x27;warning&#x27;, err)
+    self.emit('warning', err)
   }
 
   function onerror (err) {
-    self.emit(&#x27;error&#x27;, err)
+    self.emit('error', err)
   }
 
   function onnode (node) {
-    self.emit(&#x27;node&#x27;, node)
+    self.emit('node', node)
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -655,11 +648,11 @@
 
   this._secrets = null
   this._rpc = krpc(opts)
-  this._rpc.on(&#x27;query&#x27;, onquery)
-  this._rpc.on(&#x27;node&#x27;, onnode)
-  this._rpc.on(&#x27;warning&#x27;, onwarning)
-  this._rpc.on(&#x27;error&#x27;, onerror)
-  this._rpc.on(&#x27;listening&#x27;, onlistening)
+  this._rpc.on('query', onquery)
+  this._rpc.on('node', onnode)
+  this._rpc.on('warning', onwarning)
+  this._rpc.on('error', onerror)
+  this._rpc.on('listening', onlistening)
   this._rotateSecrets()
   this._verify = opts.verify || null
   this._host = opts.host || null
@@ -674,12 +667,12 @@
   process.nextTick(bootstrap)
 
   EventEmitter.call(this)
-  this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+  this._debug('new DHT %s', this.nodeId)
 
   function onlistening () {
     self.listening = true
-    self._debug(&#x27;listening %d&#x27;, self.address().port)
-    self.emit(&#x27;listening&#x27;)
+    self._debug('listening %d', self.address().port)
+    self.emit('listening')
   }
 
   function onquery (query, peer) {
@@ -695,15 +688,15 @@
   }
 
   function onwarning (err) {
-    self.emit(&#x27;warning&#x27;, err)
+    self.emit('warning', err)
   }
 
   function onerror (err) {
-    self.emit(&#x27;error&#x27;, err)
+    self.emit('error', err)
   }
 
   function onnode (node) {
-    self.emit(&#x27;node&#x27;, node)
+    self.emit('node', node)
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -730,11 +723,11 @@
 
   this._secrets = null
   this._rpc = krpc(opts)
-  this._rpc.on(&#x27;query&#x27;, onquery)
-  this._rpc.on(&#x27;node&#x27;, onnode)
-  this._rpc.on(&#x27;warning&#x27;, onwarning)
-  this._rpc.on(&#x27;error&#x27;, onerror)
-  this._rpc.on(&#x27;listening&#x27;, onlistening)
+  this._rpc.on('query', onquery)
+  this._rpc.on('node', onnode)
+  this._rpc.on('warning', onwarning)
+  this._rpc.on('error', onerror)
+  this._rpc.on('listening', onlistening)
   this._rotateSecrets()
   this._verify = opts.verify || null
   this._host = opts.host || null
@@ -749,12 +742,12 @@
   process.nextTick(bootstrap)
 
   EventEmitter.call(this)
-  this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+  this._debug('new DHT %s', this.nodeId)
 
   function onlistening () {
     self.listening = true
-    self._debug(&#x27;listening %d&#x27;, self.address().port)
-    self.emit(&#x27;listening&#x27;)
+    self._debug('listening %d', self.address().port)
+    self.emit('listening')
   }
 
   function onquery (query, peer) {
@@ -770,15 +763,15 @@
   }
 
   function onwarning (err) {
-    self.emit(&#x27;warning&#x27;, err)
+    self.emit('warning', err)
   }
 
   function onerror (err) {
-    self.emit(&#x27;error&#x27;, err)
+    self.emit('error', err)
   }
 
   function onnode (node) {
-    self.emit(&#x27;node&#x27;, node)
+    self.emit('node', node)
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -814,13 +807,13 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_addPeer = function (peer, infoHash, from) {
-  this._peers.add(infoHash.toString(&#x27;hex&#x27;), encodePeer(peer.host, peer.port))
-  this.emit(&#x27;announce&#x27;, peer, infoHash, from)
+  this._peers.add(infoHash.toString('hex'), encodePeer(peer.host, peer.port))
+  this.emit('announce', peer, infoHash, from)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 if (!cb) cb = noop
 
-var table = this._tables.get(infoHash.toString(&#x27;hex&#x27;))
+var table = this._tables.get(infoHash.toString('hex'))
 if (!table) return this._preannounce(infoHash, port, cb)
 
 if (this._host) {
@@ -850,7 +843,7 @@ var message = {
   if (!populate) return process.nextTick(ready)
 
   this._rpc.populate(self._rpc.id, {
-    q: &#x27;find_node&#x27;,
+    q: 'find_node',
     a: {
       id: self._rpc.id,
       target: self._rpc.id
@@ -858,9 +851,9 @@ var message = {
   }, ready)
 
   function ready () {
-    self._debug(&#x27;emit ready&#x27;)
+    self._debug('emit ready')
     self.ready = true
-    self.emit(&#x27;ready&#x27;)
+    self.emit('ready')
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -875,7 +868,7 @@ function bootstrap () {
 }
 
 function onwarning (err) {
-  self.emit(&#x27;warning&#x27;, err)
+  self.emit('warning', err)
 }
 
 function onerror (err) {
@@ -903,16 +896,16 @@ function onerror (err) {
 
   function done (err, n) {
     if (err) return cb(err)
-    self._tables.set(target.toString(&#x27;hex&#x27;), table)
-    self._debug(&#x27;visited %d nodes&#x27;, n)
+    self._tables.set(target.toString('hex'), table)
+    self._debug('visited %d nodes', n)
     cb(null, n)
   }
 
   function onreply (message, node) {
     if (!message.r) return true
 
-    if (message.r.token &#x26;&#x26; message.r.id &#x26;&#x26; Buffer.isBuffer(message.r.id) &#x26;&#x26; message.r.id.length === 20) {
-      self._debug(&#x27;found node %s (target: %s)&#x27;, message.r.id, target)
+    if (message.r.token &amp;&amp; message.r.id &amp;&amp; Buffer.isBuffer(message.r.id) &amp;&amp; message.r.id.length === 20) {
+      self._debug('found node %s (target: %s)', message.r.id, target)
       table.add({
         id: message.r.id,
         host: node.host || node.address,
@@ -934,7 +927,7 @@ DHT.prototype._preput = function (key, opts, cb) {
 var self = this
 
 this.<span class="apidocCodeKeywordSpan">_closest</span>(key, {
-  q: &#x27;get&#x27;,
+  q: 'get',
   a: {
     id: this._rpc.id,
     target: key
@@ -956,9 +949,9 @@ this.<span class="apidocCodeKeywordSpan">_closest</span>(key, {
     <li>description and source-code<pre class="apidocCodePre">_debug = function () {
   if (!debug.enabled) return
   var args = [].slice.call(arguments)
-  args[0] = &#x27;[&#x27; + this.nodeId.toString(&#x27;hex&#x27;).substring(0, 7) + &#x27;] &#x27; + args[0]
-  for (var i = 1; i &#x3c; args.length; i++) {
-    if (Buffer.isBuffer(args[i])) args[i] = args[i].toString(&#x27;hex&#x27;)
+  args[0] = '[' + this.nodeId.toString('hex').substring(0, 7) + '] ' + args[0]
+  for (var i = 1; i &lt; args.length; i++) {
+    if (Buffer.isBuffer(args[i])) args[i] = args[i].toString('hex')
   }
   debug.apply(null, args)
 }</pre></li>
@@ -970,12 +963,12 @@ this.nodes = this._rpc.nodes
 process.nextTick(bootstrap)
 
 EventEmitter.call(this)
-this.<span class="apidocCodeKeywordSpan">_debug</span>(&#x27;new DHT %s&#x27;, this.nodeId)
+this.<span class="apidocCodeKeywordSpan">_debug</span>('new DHT %s', this.nodeId)
 
 function onlistening () {
   self.listening = true
-  self._debug(&#x27;listening %d&#x27;, self.address().port)
-  self.emit(&#x27;listening&#x27;)
+  self._debug('listening %d', self.address().port)
+  self.emit('listening')
 }
 ...</pre></li>
     </ul>
@@ -991,18 +984,18 @@ function onlistening () {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_generateToken = function (host, secret) {
   if (!secret) secret = this._secrets[0]
-  return crypto.createHash(&#x27;sha1&#x27;).update(Buffer.from(host)).update(secret).digest()
+  return crypto.createHash('sha1').update(Buffer.from(host)).update(secret).digest()
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 DHT.prototype._ongetpeers = function (query, peer) {
 var host = peer.address || peer.host
 var infoHash = query.a.info_hash
-if (!infoHash) return this._rpc.error(peer, query, [203, &#x27;`get_peers` missing required `a.info_hash` field&#x27;])
+if (!infoHash) return this._rpc.error(peer, query, [203, '`get_peers` missing required `a.info_hash` field'])
 
-this.emit(&#x27;get_peers&#x27;, infoHash)
+this.emit('get_peers', infoHash)
 
 var r = {id: this._rpc.id, token: this.<span class="apidocCodeKeywordSpan">_generateToken</span>(host)}
-var peers = this._peers.get(infoHash.toString(&#x27;hex&#x27;))
+var peers = this._peers.get(infoHash.toString('hex'))
 
 if (peers.length) {
   r.values = peers
@@ -1024,34 +1017,34 @@ if (peers.length) {
     <li>description and source-code<pre class="apidocCodePre">_onannouncepeer = function (query, peer) {
   var host = peer.address || peer.host
   var port = query.a.implied_port ? peer.port : query.a.port
-  if (!port || typeof port !== &#x27;number&#x27;) return
+  if (!port || typeof port !== 'number') return
   var infoHash = query.a.info_hash
   var token = query.a.token
   if (!infoHash || !token) return
 
   if (!this._validateToken(host, token)) {
-    return this._rpc.error(peer, query, [203, &#x27;cannot `announce_peer` with bad token&#x27;])
+    return this._rpc.error(peer, query, [203, 'cannot `announce_peer` with bad token'])
   }
 
-  this.emit(&#x27;announce_peer&#x27;, infoHash, {host: host, port: peer.port})
+  this.emit('announce_peer', infoHash, {host: host, port: peer.port})
 
   this._addPeer({host: host, port: port}, infoHash, {host: host, port: peer.port})
   this._rpc.response(peer, query, {id: this._rpc.id})
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  case &#x27;find_node&#x27;:
+  case 'find_node':
     return this._onfindnode(query, peer)
 
-  case &#x27;get_peers&#x27;:
+  case 'get_peers':
     return this._ongetpeers(query, peer)
 
-  case &#x27;announce_peer&#x27;:
+  case 'announce_peer':
     return this.<span class="apidocCodeKeywordSpan">_onannouncepeer</span>(query, peer)
 
-  case &#x27;get&#x27;:
+  case 'get':
     return this._onget(query, peer)
 
-  case &#x27;put&#x27;:
+  case 'put':
     return this._onput(query, peer)
 }
 ...</pre></li>
@@ -1068,9 +1061,9 @@ if (peers.length) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_onfindnode = function (query, peer) {
   var target = query.a.target
-  if (!target) return this._rpc.error(peer, query, [203, &#x27;`find_node` missing required `a.target` field&#x27;])
+  if (!target) return this._rpc.error(peer, query, [203, '`find_node` missing required `a.target` field'])
 
-  this.emit(&#x27;find_node&#x27;, target)
+  this.emit('find_node', target)
 
   var nodes = this._rpc.nodes.closest(target)
   this._rpc.response(peer, query, {id: this._rpc.id}, nodes)
@@ -1079,16 +1072,16 @@ if (peers.length) {
   if (!query.a) return
 
   switch (q) {
-case &#x27;ping&#x27;:
+case 'ping':
   return this._rpc.response(peer, query, {id: this._rpc.id})
 
-case &#x27;find_node&#x27;:
+case 'find_node':
   return this.<span class="apidocCodeKeywordSpan">_onfindnode</span>(query, peer)
 
-case &#x27;get_peers&#x27;:
+case 'get_peers':
   return this._ongetpeers(query, peer)
 
-case &#x27;announce_peer&#x27;:
+case 'announce_peer':
   return this._onannouncepeer(query, peer)
 ...</pre></li>
     </ul>
@@ -1107,9 +1100,9 @@ case &#x27;announce_peer&#x27;:
   var target = query.a.target
   if (!target) return
   var token = this._generateToken(host)
-  var value = this._values.get(target.toString(&#x27;hex&#x27;))
+  var value = this._values.get(target.toString('hex'))
 
-  this.emit(&#x27;get&#x27;, target, value)
+  this.emit('get', target, value)
 
   if (!value) {
     var nodes = this._rpc.nodes.closest(target)
@@ -1119,16 +1112,16 @@ case &#x27;announce_peer&#x27;:
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    case &#x27;get_peers&#x27;:
+    case 'get_peers':
       return this._ongetpeers(query, peer)
 
-    case &#x27;announce_peer&#x27;:
+    case 'announce_peer':
       return this._onannouncepeer(query, peer)
 
-    case &#x27;get&#x27;:
+    case 'get':
       return this.<span class="apidocCodeKeywordSpan">_onget</span>(query, peer)
 
-    case &#x27;put&#x27;:
+    case 'put':
       return this._onput(query, peer)
   }
 }
@@ -1149,12 +1142,12 @@ DHT.prototype._onfindnode = function (query, peer) {
     <li>description and source-code<pre class="apidocCodePre">_ongetpeers = function (query, peer) {
   var host = peer.address || peer.host
   var infoHash = query.a.info_hash
-  if (!infoHash) return this._rpc.error(peer, query, [203, &#x27;`get_peers` missing required `a.info_hash` field&#x27;])
+  if (!infoHash) return this._rpc.error(peer, query, [203, '`get_peers` missing required `a.info_hash` field'])
 
-  this.emit(&#x27;get_peers&#x27;, infoHash)
+  this.emit('get_peers', infoHash)
 
   var r = {id: this._rpc.id, token: this._generateToken(host)}
-  var peers = this._peers.get(infoHash.toString(&#x27;hex&#x27;))
+  var peers = this._peers.get(infoHash.toString('hex'))
 
   if (peers.length) {
     r.values = peers
@@ -1164,19 +1157,19 @@ DHT.prototype._onfindnode = function (query, peer) {
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-case &#x27;ping&#x27;:
+case 'ping':
   return this._rpc.response(peer, query, {id: this._rpc.id})
 
-case &#x27;find_node&#x27;:
+case 'find_node':
   return this._onfindnode(query, peer)
 
-case &#x27;get_peers&#x27;:
+case 'get_peers':
   return this.<span class="apidocCodeKeywordSpan">_ongetpeers</span>(query, peer)
 
-case &#x27;announce_peer&#x27;:
+case 'announce_peer':
   return this._onannouncepeer(query, peer)
 
-case &#x27;get&#x27;:
+case 'get':
   return this._onget(query, peer)
 ...</pre></li>
     </ul>
@@ -1204,31 +1197,31 @@ case &#x27;get&#x27;:
   if (!token) return
 
   if (!this._validateToken(host, token)) {
-    return this._rpc.error(peer, query, [203, &#x27;cannot `put` with bad token&#x27;])
+    return this._rpc.error(peer, query, [203, 'cannot `put` with bad token'])
   }
-  if (v.length &#x3e; 1000) {
-    return this._rpc.error(peer, query, [205, &#x27;data payload too large&#x27;])
+  if (v.length &gt; 1000) {
+    return this._rpc.error(peer, query, [205, 'data payload too large'])
   }
 
   var isMutable = !!(a.k || a.sig)
-  if (isMutable &#x26;&#x26; !a.k &#x26;&#x26; !a.sig) return
+  if (isMutable &amp;&amp; !a.k &amp;&amp; !a.sig) return
 
   var key = isMutable
     ? this._hash(a.salt ? Buffer.concat([a.k, a.salt]) : a.k)
     : this._hash(bencode.encode(v))
-  var keyHex = key.toString(&#x27;hex&#x27;)
+  var keyHex = key.toString('hex')
 
-  this.emit(&#x27;put&#x27;, key, v)
+  this.emit('put', key, v)
 
   if (isMutable) {
-    if (!this._verify) return this._rpc.error(peer, query, [400, &#x27;verification not supported&#x27;])
+    if (!this._verify) return this._rpc.error(peer, query, [400, 'verification not supported'])
     if (!this._verify(a.sig, encodeSigData(a), a.k)) return
     var prev = this._values.get(keyHex)
-    if (prev &#x26;&#x26; typeof a.cas === &#x27;number&#x27; &#x26;&#x26; prev.seq !== a.cas) {
-      return this._rpc.error(peer, query, [301, &#x27;CAS mismatch, re-read and try again&#x27;])
+    if (prev &amp;&amp; typeof a.cas === 'number' &amp;&amp; prev.seq !== a.cas) {
+      return this._rpc.error(peer, query, [301, 'CAS mismatch, re-read and try again'])
     }
-    if (prev &#x26;&#x26; typeof prev.seq === &#x27;number&#x27; &#x26;&#x26; !(a.seq &#x3e; prev.seq)) {
-      return this._rpc.error(peer, query, [302, &#x27;sequence number less than current&#x27;])
+    if (prev &amp;&amp; typeof prev.seq === 'number' &amp;&amp; !(a.seq &gt; prev.seq)) {
+      return this._rpc.error(peer, query, [302, 'sequence number less than current'])
     }
     this._values.set(keyHex, {v: v, k: a.k, salt: a.salt, sig: a.sig, seq: a.seq, id: id})
   } else {
@@ -1238,20 +1231,20 @@ case &#x27;get&#x27;:
   this._rpc.response(peer, query, {id: this._rpc.id})
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  case &#x27;announce_peer&#x27;:
+  case 'announce_peer':
     return this._onannouncepeer(query, peer)
 
-  case &#x27;get&#x27;:
+  case 'get':
     return this._onget(query, peer)
 
-  case &#x27;put&#x27;:
+  case 'put':
     return this.<span class="apidocCodeKeywordSpan">_onput</span>(query, peer)
 }
 }
 
 DHT.prototype._onfindnode = function (query, peer) {
 var target = query.a.target
-if (!target) return this._rpc.error(peer, query, [203, &#x27;`find_node` missing required `a.target` field&#x27;])
+if (!target) return this._rpc.error(peer, query, [203, '`find_node` missing required `a.target` field'])
 ...</pre></li>
     </ul>
 
@@ -1266,34 +1259,34 @@ if (!target) return this._rpc.error(peer, query, [203, &#x27;`find_node` missing
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_onquery = function (query, peer) {
   var q = query.q.toString()
-  this._debug(&#x27;received %s query from %s:%d&#x27;, q, peer.address, peer.port)
+  this._debug('received %s query from %s:%d', q, peer.address, peer.port)
   if (!query.a) return
 
   switch (q) {
-    case &#x27;ping&#x27;:
+    case 'ping':
       return this._rpc.response(peer, query, {id: this._rpc.id})
 
-    case &#x27;find_node&#x27;:
+    case 'find_node':
       return this._onfindnode(query, peer)
 
-    case &#x27;get_peers&#x27;:
+    case 'get_peers':
       return this._ongetpeers(query, peer)
 
-    case &#x27;announce_peer&#x27;:
+    case 'announce_peer':
       return this._onannouncepeer(query, peer)
 
-    case &#x27;get&#x27;:
+    case 'get':
       return this._onget(query, peer)
 
-    case &#x27;put&#x27;:
+    case 'put':
       return this._onput(query, peer)
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 function onlistening () {
   self.listening = true
-  self._debug(&#x27;listening %d&#x27;, self.address().port)
-  self.emit(&#x27;listening&#x27;)
+  self._debug('listening %d', self.address().port)
+  self.emit('listening')
 }
 
 function onquery (query, peer) {
@@ -1321,7 +1314,7 @@ function bootstrap () {
   var self = this
 
   this.lookup(infoHash, function (err) {
-    if (self.destroyed) return cb(new Error(&#x27;dht is destroyed&#x27;))
+    if (self.destroyed) return cb(new Error('dht is destroyed'))
     if (err) return cb(err)
     self.announce(infoHash, port, cb)
   })
@@ -1329,11 +1322,11 @@ function bootstrap () {
     <li>example usage<pre class="apidocCodePre">...
 
 DHT.prototype.announce = function (infoHash, port, cb) {
-if (typeof port === &#x27;function&#x27;) return this.announce(infoHash, 0, port)
+if (typeof port === 'function') return this.announce(infoHash, 0, port)
 infoHash = toBuffer(infoHash)
 if (!cb) cb = noop
 
-var table = this._tables.get(infoHash.toString(&#x27;hex&#x27;))
+var table = this._tables.get(infoHash.toString('hex'))
 if (!table) return this.<span class="apidocCodeKeywordSpan">_preannounce</span>(infoHash, port, cb)
 
 if (this._host) {
@@ -1358,7 +1351,7 @@ if (this._host) {
   var self = this
 
   this._closest(key, {
-    q: &#x27;get&#x27;,
+    q: 'get',
     a: {
       id: this._rpc.id,
       target: key
@@ -1372,16 +1365,16 @@ if (this._host) {
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 var isMutable = !!opts.k
-var v = typeof opts.v === &#x27;string&#x27; ? Buffer.from(opts.v) : opts.v
+var v = typeof opts.v === 'string' ? Buffer.from(opts.v) : opts.v
 var key = isMutable
   ? this._hash(opts.salt ? Buffer.concat([opts.k, opts.salt]) : opts.k)
   : this._hash(bencode.encode(v))
 
-var table = this._tables.get(key.toString(&#x27;hex&#x27;))
+var table = this._tables.get(key.toString('hex'))
 if (!table) return this.<span class="apidocCodeKeywordSpan">_preput</span>(key, opts, cb)
 
 var message = {
-  q: &#x27;put&#x27;,
+  q: 'put',
   a: {
     id: this._rpc.id,
     token: null, // queryAll sets this
@@ -1402,16 +1395,16 @@ var message = {
   if (!cb) cb = noop
 
   var isMutable = !!opts.k
-  var v = typeof opts.v === &#x27;string&#x27; ? Buffer.from(opts.v) : opts.v
+  var v = typeof opts.v === 'string' ? Buffer.from(opts.v) : opts.v
   var key = isMutable
     ? this._hash(opts.salt ? Buffer.concat([opts.k, opts.salt]) : opts.k)
     : this._hash(bencode.encode(v))
 
-  var table = this._tables.get(key.toString(&#x27;hex&#x27;))
+  var table = this._tables.get(key.toString('hex'))
   if (!table) return this._preput(key, opts, cb)
 
   var message = {
-    q: &#x27;put&#x27;,
+    q: 'put',
     a: {
       id: this._rpc.id,
       token: null, // queryAll sets this
@@ -1420,15 +1413,15 @@ var message = {
   }
 
   if (isMutable) {
-    if (typeof opts.cas === &#x27;number&#x27;) message.a.cas = opts.cas
+    if (typeof opts.cas === 'number') message.a.cas = opts.cas
     if (opts.salt) message.a.salt = opts.salt
     message.a.k = opts.k
     message.a.seq = opts.seq
-    if (typeof opts.sign === &#x27;function&#x27;) message.a.sig = opts.sign(encodeSigData(message.a))
+    if (typeof opts.sign === 'function') message.a.sig = opts.sign(encodeSigData(message.a))
     else if (Buffer.isBuffer(opts.sig)) message.a.sig = opts.sig
   }
 
-  this._values.set(key.toString(&#x27;hex&#x27;), message.a)
+  this._values.set(key.toString('hex'), message.a)
   this._rpc.queryAll(table.closest(key), message, null, function (err, n) {
     if (err) return cb(err, key, n)
     cb(null, key, n)
@@ -1437,11 +1430,11 @@ var message = {
   return key
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-if (isMutable &#x26;&#x26; opts.seq === undefined) {
-  throw new Error(&#x27;opts.seq not provided for a mutable update&#x27;)
+if (isMutable &amp;&amp; opts.seq === undefined) {
+  throw new Error('opts.seq not provided for a mutable update')
 }
-if (isMutable &#x26;&#x26; typeof opts.seq !== &#x27;number&#x27;) {
-  throw new Error(&#x27;opts.seq not an integer&#x27;)
+if (isMutable &amp;&amp; typeof opts.seq !== 'number') {
+  throw new Error('opts.seq not an integer')
 }
 
 return this.<span class="apidocCodeKeywordSpan">_put</span>(opts, cb)
@@ -1451,7 +1444,7 @@ DHT.prototype._put = function (opts, cb) {
 if (!cb) cb = noop
 
 var isMutable = !!opts.k
-var v = typeof opts.v === &#x27;string&#x27; ? Buffer.from(opts.v) : opts.v
+var v = typeof opts.v === 'string' ? Buffer.from(opts.v) : opts.v
 ...</pre></li>
     </ul>
 
@@ -1475,11 +1468,11 @@ var v = typeof opts.v === &#x27;string&#x27; ? Buffer.from(opts.v) : opts.v
     <li>example usage<pre class="apidocCodePre">...
 this._secrets = null
 this._rpc = krpc(opts)
-this._rpc.on(&#x27;query&#x27;, onquery)
-this._rpc.on(&#x27;node&#x27;, onnode)
-this._rpc.on(&#x27;warning&#x27;, onwarning)
-this._rpc.on(&#x27;error&#x27;, onerror)
-this._rpc.on(&#x27;listening&#x27;, onlistening)
+this._rpc.on('query', onquery)
+this._rpc.on('node', onnode)
+this._rpc.on('warning', onwarning)
+this._rpc.on('error', onerror)
+this._rpc.on('listening', onlistening)
 this.<span class="apidocCodeKeywordSpan">_rotateSecrets</span>()
 this._verify = opts.verify || null
 this._host = opts.host || null
@@ -1501,10 +1494,10 @@ this.destroyed = false
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_sendPing = function (node, cb) {
-  this._rpc.query(node, {q: &#x27;ping&#x27;}, function (err, pong, node) {
+  this._rpc.query(node, {q: 'ping'}, function (err, pong, node) {
     if (err) return cb(err)
     if (!pong.r || !pong.r.id || !Buffer.isBuffer(pong.r.id) || pong.r.id.length !== 20) {
-      return cb(new Error(&#x27;Bad reply&#x27;))
+      return cb(new Error('Bad reply'))
     }
     cb(null, {
       id: pong.r.id,
@@ -1518,7 +1511,7 @@ this.destroyed = false
     node.id = toBuffer(node.id)
     var old = !!this._rpc.nodes.get(node.id)
     this._rpc.nodes.add(node)
-    if (!old) this.emit(&#x27;node&#x27;, node)
+    if (!old) this.emit('node', node)
     return
   }
   this.<span class="apidocCodeKeywordSpan">_sendPing</span>(node, function (_, node) {
@@ -1549,16 +1542,16 @@ DHT.prototype.removeNode = function (id) {
     <li>example usage<pre class="apidocCodePre">...
 var host = peer.address || peer.host
 var port = query.a.implied_port ? peer.port : query.a.port
-if (!port || typeof port !== &#x27;number&#x27;) return
+if (!port || typeof port !== 'number') return
 var infoHash = query.a.info_hash
 var token = query.a.token
 if (!infoHash || !token) return
 
 if (!this.<span class="apidocCodeKeywordSpan">_validateToken</span>(host, token)) {
-  return this._rpc.error(peer, query, [203, &#x27;cannot `announce_peer` with bad token&#x27;])
+  return this._rpc.error(peer, query, [203, 'cannot `announce_peer` with bad token'])
 }
 
-this.emit(&#x27;announce_peer&#x27;, infoHash, {host: host, port: peer.port})
+this.emit('announce_peer', infoHash, {host: host, port: peer.port})
 
 this._addPeer({host: host, port: port}, infoHash, {host: host, port: peer.port})
 this._rpc.response(peer, query, {id: this._rpc.id})
@@ -1580,7 +1573,7 @@ this._rpc.response(peer, query, {id: this._rpc.id})
     node.id = toBuffer(node.id)
     var old = !!this._rpc.nodes.get(node.id)
     this._rpc.nodes.add(node)
-    if (!old) this.emit(&#x27;node&#x27;, node)
+    if (!old) this.emit('node', node)
     return
   }
   this._sendPing(node, function (_, node) {
@@ -1591,7 +1584,7 @@ this._rpc.response(peer, query, {id: this._rpc.id})
     node.id = toBuffer(node.id)
     var old = !!this._rpc.nodes.get(node.id)
     this._rpc.nodes.add(node)
-    if (!old) this.emit(&#x27;node&#x27;, node)
+    if (!old) this.emit('node', node)
     return
   }
   this._sendPing(node, function (_, node) {
@@ -1621,12 +1614,12 @@ DHT.prototype.removeNode = function (id) {
 process.nextTick(bootstrap)
 
 EventEmitter.call(this)
-this._debug(&#x27;new DHT %s&#x27;, this.nodeId)
+this._debug('new DHT %s', this.nodeId)
 
 function onlistening () {
   self.listening = true
-  self._debug(&#x27;listening %d&#x27;, self.<span class="apidocCodeKeywordSpan">address</span>().port)
-  self.emit(&#x27;listening&#x27;)
+  self._debug('listening %d', self.<span class="apidocCodeKeywordSpan">address</span>().port)
+  self.emit('listening')
 }
 
 function onquery (query, peer) {
@@ -1645,11 +1638,11 @@ function onquery (query, peer) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">announce = function (infoHash, port, cb) {
-  if (typeof port === &#x27;function&#x27;) return this.announce(infoHash, 0, port)
+  if (typeof port === 'function') return this.announce(infoHash, 0, port)
   infoHash = toBuffer(infoHash)
   if (!cb) cb = noop
 
-  var table = this._tables.get(infoHash.toString(&#x27;hex&#x27;))
+  var table = this._tables.get(infoHash.toString('hex'))
   if (!table) return this._preannounce(infoHash, port, cb)
 
   if (this._host) {
@@ -1662,7 +1655,7 @@ function onquery (query, peer) {
   }
 
   var message = {
-    q: &#x27;announce_peer&#x27;,
+    q: 'announce_peer',
     a: {
       id: this._rpc.id,
       token: null, // queryAll sets this
@@ -1672,7 +1665,7 @@ function onquery (query, peer) {
     }
   }
 
-  this._debug(&#x27;announce %s %d&#x27;, infoHash, port)
+  this._debug('announce %s %d', infoHash, port)
   this._rpc.queryAll(table.closest(infoHash), message, null, cb)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -1683,11 +1676,11 @@ function onquery (query, peer) {
 }
 
 DHT.prototype.announce = function (infoHash, port, cb) {
-if (typeof port === &#x27;function&#x27;) return this.<span class="apidocCodeKeywordSpan">announce</span>(infoHash, 0, port)
+if (typeof port === 'function') return this.<span class="apidocCodeKeywordSpan">announce</span>(infoHash, 0, port)
 infoHash = toBuffer(infoHash)
 if (!cb) cb = noop
 
-var table = this._tables.get(infoHash.toString(&#x27;hex&#x27;))
+var table = this._tables.get(infoHash.toString('hex'))
 if (!table) return this._preannounce(infoHash, port, cb)
 
 if (this._host) {
@@ -1711,9 +1704,9 @@ if (this._host) {
   this.destroyed = true
   var self = this
   clearInterval(this._interval)
-  this._debug(&#x27;destroying&#x27;)
+  this._debug('destroying')
   this._rpc.destroy(function () {
-    self.emit(&#x27;close&#x27;)
+    self.emit('close')
     if (cb) cb()
   })
 }</pre></li>
@@ -1724,9 +1717,9 @@ if (this._host) {
 this.destroyed = true
 var self = this
 clearInterval(this._interval)
-this._debug(&#x27;destroying&#x27;)
+this._debug('destroying')
 this._rpc.<span class="apidocCodeKeywordSpan">destroy</span>(function () {
-  self.emit(&#x27;close&#x27;)
+  self.emit('close')
   if (cb) cb()
 })
 }
@@ -1747,7 +1740,7 @@ var q = query.q.toString()
     <ul>
     <li>description and source-code<pre class="apidocCodePre">get = function (key, opts, cb) {
   key = toBuffer(key)
-  if (typeof opts === &#x27;function&#x27;) {
+  if (typeof opts === 'function') {
     cb = opts
     opts = null
   }
@@ -1755,7 +1748,7 @@ var q = query.q.toString()
   if (!opts) opts = {}
   var verify = opts.verify || this._verify
   var hash = this._hash
-  var value = this._values.get(key.toString(&#x27;hex&#x27;)) || null
+  var value = this._values.get(key.toString('hex')) || null
 
   if (value) {
     value = createGetResponse(this._rpc.id, null, value)
@@ -1763,7 +1756,7 @@ var q = query.q.toString()
   }
 
   this._closest(key, {
-    q: &#x27;get&#x27;,
+    q: 'get',
     a: {
       id: this._rpc.id,
       target: key
@@ -1808,7 +1801,7 @@ if (node.id) {
   node.id = toBuffer(node.id)
   var old = !!this._rpc.nodes.<span class="apidocCodeKeywordSpan">get</span>(node.id)
   this._rpc.nodes.add(node)
-  if (!old) this.emit(&#x27;node&#x27;, node)
+  if (!old) this.emit('node', node)
   return
 }
 this._sendPing(node, function (_, node) {
@@ -1827,7 +1820,7 @@ this._sendPing(node, function (_, node) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">listen = function (port, cb) {
-  if (typeof port === &#x27;function&#x27;) return this.listen(0, port)
+  if (typeof port === 'function') return this.listen(0, port)
   this._rpc.bind(port, cb)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -1838,7 +1831,7 @@ return this._rpc.address()
 }
 
 DHT.prototype.listen = function (port, cb) {
-if (typeof port === &#x27;function&#x27;) return this.<span class="apidocCodeKeywordSpan">listen</span>(0, port)
+if (typeof port === 'function') return this.<span class="apidocCodeKeywordSpan">listen</span>(0, port)
 this._rpc.bind(port, cb)
 }
 
@@ -1864,10 +1857,10 @@ if (this.destroyed) {
   var self = this
   var aborted = false
 
-  this._debug(&#x27;lookup %s&#x27;, infoHash)
+  this._debug('lookup %s', infoHash)
   process.nextTick(emit)
   this._closest(infoHash, {
-    q: &#x27;get_peers&#x27;,
+    q: 'get_peers',
     a: {
       id: this._rpc.id,
       info_hash: infoHash
@@ -1875,10 +1868,10 @@ if (this.destroyed) {
   }, onreply, cb)
 
   function emit (values, from) {
-    if (!values) values = self._peers.get(infoHash.toString(&#x27;hex&#x27;))
+    if (!values) values = self._peers.get(infoHash.toString('hex'))
     var peers = decodePeers(values)
-    for (var i = 0; i &#x3c; peers.length; i++) {
-      self.emit(&#x27;peer&#x27;, peers[i], infoHash, from || null)
+    for (var i = 0; i &lt; peers.length; i++) {
+      self.emit('peer', peers[i], infoHash, from || null)
     }
   }
 
@@ -1890,7 +1883,7 @@ if (this.destroyed) {
   return function abort () { aborted = true }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  this._debug(&#x27;announce %s %d&#x27;, infoHash, port)
+  this._debug('announce %s %d', infoHash, port)
   this._rpc.queryAll(table.closest(infoHash), message, null, cb)
 }
 
@@ -1898,7 +1891,7 @@ DHT.prototype._preannounce = function (infoHash, port, cb) {
   var self = this
 
   this.<span class="apidocCodeKeywordSpan">lookup</span>(infoHash, function (err) {
-    if (self.destroyed) return cb(new Error(&#x27;dht is destroyed&#x27;))
+    if (self.destroyed) return cb(new Error('dht is destroyed'))
     if (err) return cb(err)
     self.announce(infoHash, port, cb)
   })
@@ -1918,40 +1911,40 @@ DHT.prototype.lookup = function (infoHash, cb) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">put = function (opts, cb) {
-  if (Buffer.isBuffer(opts) || typeof opts === &#x27;string&#x27;) opts = {v: opts}
+  if (Buffer.isBuffer(opts) || typeof opts === 'string') opts = {v: opts}
   var isMutable = !!opts.k
   if (opts.v === undefined) {
-    throw new Error(&#x27;opts.v not given&#x27;)
+    throw new Error('opts.v not given')
   }
-  if (opts.v.length &#x3e;= 1000) {
-    throw new Error(&#x27;v must be less than 1000 bytes in put()&#x27;)
+  if (opts.v.length &gt;= 1000) {
+    throw new Error('v must be less than 1000 bytes in put()')
   }
-  if (isMutable &#x26;&#x26; opts.cas !== undefined &#x26;&#x26; typeof opts.cas !== &#x27;number&#x27;) {
-    throw new Error(&#x27;opts.cas must be an integer if provided&#x27;)
+  if (isMutable &amp;&amp; opts.cas !== undefined &amp;&amp; typeof opts.cas !== 'number') {
+    throw new Error('opts.cas must be an integer if provided')
   }
-  if (isMutable &#x26;&#x26; !opts.k) {
-    throw new Error(&#x27;opts.k ed25519 public key required for mutable put&#x27;)
+  if (isMutable &amp;&amp; !opts.k) {
+    throw new Error('opts.k ed25519 public key required for mutable put')
   }
-  if (isMutable &#x26;&#x26; opts.k.length !== 32) {
-    throw new Error(&#x27;opts.k ed25519 public key must be 32 bytes&#x27;)
+  if (isMutable &amp;&amp; opts.k.length !== 32) {
+    throw new Error('opts.k ed25519 public key must be 32 bytes')
   }
-  if (isMutable &#x26;&#x26; typeof opts.sign !== &#x27;function&#x27; &#x26;&#x26; !Buffer.isBuffer(opts.sig)) {
-    throw new Error(&#x27;opts.sign function or options.sig signature is required for mutable put&#x27;)
+  if (isMutable &amp;&amp; typeof opts.sign !== 'function' &amp;&amp; !Buffer.isBuffer(opts.sig)) {
+    throw new Error('opts.sign function or options.sig signature is required for mutable put')
   }
-  if (isMutable &#x26;&#x26; opts.salt &#x26;&#x26; opts.salt.length &#x3e; 64) {
-    throw new Error(&#x27;opts.salt is &#x3e; 64 bytes long&#x27;)
+  if (isMutable &amp;&amp; opts.salt &amp;&amp; opts.salt.length &gt; 64) {
+    throw new Error('opts.salt is &gt; 64 bytes long')
   }
-  if (isMutable &#x26;&#x26; opts.seq === undefined) {
-    throw new Error(&#x27;opts.seq not provided for a mutable update&#x27;)
+  if (isMutable &amp;&amp; opts.seq === undefined) {
+    throw new Error('opts.seq not provided for a mutable update')
   }
-  if (isMutable &#x26;&#x26; typeof opts.seq !== &#x27;number&#x27;) {
-    throw new Error(&#x27;opts.seq not an integer&#x27;)
+  if (isMutable &amp;&amp; typeof opts.seq !== 'number') {
+    throw new Error('opts.seq not an integer')
   }
 
   return this._put(opts, cb)
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  q: &#x27;get&#x27;,
+  q: 'get',
   a: {
     id: this._rpc.id,
     target: key
@@ -1999,12 +1992,12 @@ key = toBuffer(key)
   Object.keys(this._values.cache).forEach(function (key) {
     var value = self._values.cache[key].value
     values[key] = {
-      v: value.v.toString(&#x27;hex&#x27;),
-      id: value.id.toString(&#x27;hex&#x27;)
+      v: value.v.toString('hex'),
+      id: value.id.toString('hex')
     }
     if (value.seq != null) values[key].seq = value.seq
-    if (value.sig != null) values[key].sig = value.sig.toString(&#x27;hex&#x27;)
-    if (value.k != null) values[key].k = value.k.toString(&#x27;hex&#x27;)
+    if (value.sig != null) values[key].sig = value.sig.toString('hex')
+    if (value.k != null) values[key].k = value.k.toString('hex')
   })
   return {
     nodes: this._rpc.nodes.toArray().map(toNode),
@@ -2025,8 +2018,8 @@ Returns the current state of the DHT, including DHT nodes and BEP44 values.
 
 ```json
 {
-&#x22;nodes&#x22;: [],
-&#x22;values&#x22;: {}
+"nodes": [],
+"values": {}
 ...</pre></li>
     </ul>
 
@@ -2039,3 +2032,4 @@ Returns the current state of the DHT, including DHT nodes and BEP44 values.
     ]
 </div>
 </div>
+</body></html>
