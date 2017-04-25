@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "bittorrent-dht",
-    "description": "api documentation for [bittorrent-dht (v7.5.0)](https://github.com/feross/bittorrent-dht#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-bittorrent-dht.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-bittorrent-dht) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-bittorrent-dht.svg)](https://travis-ci.org/npmdoc/node-npmdoc-bittorrent-dht)",
+    "description": "#### basic api documentation for  [bittorrent-dht (v7.5.3)](https://github.com/webtorrent/bittorrent-dht#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-bittorrent-dht.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-bittorrent-dht) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-bittorrent-dht.svg)](https://travis-ci.org/npmdoc/node-npmdoc-bittorrent-dht)",
     "devDependencies": {
         "bittorrent-dht": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
